@@ -1,0 +1,237 @@
+ #Esto es un saludo
+#palabraUna= "Hola Day"
+#palabraDos= "¿Como amanecio la niña mas Linda?" 
+#resultado = palabraUna + palabraDos
+#print (" Fabri:", + resultado)
+
+
+
+    #Esto es una Suma Y Resta
+#numeroUno= 45
+#numeroDos= 40
+#numero_tres= 20
+#numero_ocho= 100
+
+#resultado = numero_ocho - numero_tres
+
+#print("La resta es:", resultado)
+
+#respuesta = numeroUno + numeroDos
+#respuesta = str(respuesta)
+#print("El rersultado de la suma :" + respuesta)
+#verificacion = resultado==respuesta
+#print("La verificacion:" + str verificacion)
+
+
+
+
+  #Uso del umput
+#Nombre = input("¿Como te llamas?") 
+#print ("hola " + Nombre + " Quiero saber dedonde eres:")
+
+#Country = input("Porfavor puede introducir el pais de nacionalidad")
+#ciudad = input("Porfavor introduche la ciudad de residencia")
+#ubicacion = Country + ciudad
+#print (Nombre + " tu lugar de residencia es:", ubicacion)
+#Nombre = input("¿como te llamas ")
+
+
+
+#print(" hola " + Nombre + " hoy bamos hacer division ")
+
+#numeroUno = int(input("intruduce un numero"))
+#numeroDos = int(input("introduce otro numero"))
+#resultado = numeroUno / numeroDos
+#print(" hola" + Nombre + " el resultado de la division es:",resultado )
+
+#SENTENCIA CONDICIONAL SIMPLE
+
+#print ( "Proyecto para calcular promedio")
+
+#Nombre = input("para empesar " "¿Como se llama?")
+
+#matematicas = int(input( Nombre+ " culal es su nota en matematicas: "))
+#literatura = int(input(Nombre +  " culal es su nota en  literatura: "))
+#ingles = int(input(Nombre + " culal es su nota en ingles: "))
+
+#promedio = matematicas+literatura+ingles /3
+#promedio = int(promedio)
+#if promedio >=16:
+  #print( " felicidades " +  Nombre  + " aprovaste con un promedio de ", + promedio )
+
+#print ("fin")
+
+#SENTENC COMPUESTA
+
+#print("Proyecro para calcular promedio de notas ")
+#nombre = input (" para empesar ¿ cual es su nombre:?" )
+
+#dibujo = int(input(" Hola " + nombre + " que nota tiene en dibujo:"))
+#fisica = int(input(" Hola "+ nombre + " que nota tiene en fisica:"))
+#quimica = int(input(" Hola "+ nombre + " que nota tiene en quimica:"))
+#promedio = (dibujo + fisica + quimica) /3
+
+#if promedio >= 7:
+  #print(" Hola " + nombre + " 'FELICIDADES' aprobaste con un promedio:", + promedio)
+#else:
+ # print(" Hola " + nombre + " 'LO SENTIMOS NO APROBO'  por que su promedio es:", + promedio )
+#print("fin")
+
+
+
+#print(" proyecto para calcular si es apto para votar")
+#nombre = input(" Para empesar ¿ como se llama?:")
+
+#Fecha_nacimiento = int (input("Que tal " + nombre + " Ingresa el año de nacimiento: "))
+#Fecha_actual = int(input(nombre + " ingrese  el año actual "))
+
+#calculo = Fecha_actual-Fecha_nacimiento 
+#if calculo >= 18: 
+    #print (" Hola " + nombre + " ud es apto para votar por que su edad es :", + calculo)
+#else:
+  # print(" Hola " + nombre + " ud no es apto para votar por que su edad es :", + calculo)
+#print("fin")   
+
+
+#COMPARACION
+#print(" Introduce dos numeros a comparar: \n")
+
+#numero = int(input(" introduce el primer numero a comparar "))
+#numeroD =int(input(" introduce el segundo numero a comparar"))
+#print(" \n los numeros a comparar son: ", numero, " y " ,numeroD, ("\n") )
+#if numero == numeroD:
+  #print(" Son iguales")
+#if numero > numeroD:    
+  #print(" es mayor que ")  
+#if numero != numeroD:
+   #print(" es diferente")
+
+
+
+#print ( " Uso del and")
+
+#numero = int (input (" Ingresa un numero   mayor que 20  y menor que 25 :"))
+#if numero >20 and numero <25:
+ # print(" El numero", numero ," cumple con la funcion ")
+#else :
+# print (" El numero ", +numero,  " no cumple con la sentencia")
+#print("********************************************************")
+#print("* programa para determinar si un numero es par o impar *" )
+#print("******************************************************** \n" )
+
+#numero = int(input(" Inserte un numero "))
+#if numero %2 ==0:
+    #print (" El numero ", numero,  (" es par"))
+#elif numero %2==1:
+   # print("El numero " , numero , (" es impar "))
+
+
+
+#print(" ************************************************")
+#print("* COMPROBAR SI UN NUMERO ES POSITIVO O NEGATIVO *")
+#print(" ************************************************/n ")
+#numero = int(input(" Diguite un numero"))
+#if numero >5:
+    #print(" El numero es positivo")
+#else:
+    #print ("El numero es negativo \n")
+#print(" fin de programa ")  
+
+
+#STR "  para  reflejar el numero que tiene la VARIABLE"
+#edad = 25
+#medida = 1.80
+#mensaje = "Tienes " + str(edad) + " años" + " y  mides" + str(medida)+ " de estatura "
+#print(mensaje) 
+
+#print("******************************************")
+#print("* APROBACION DE MATERIAS SEGUN EL PROMEDIO *")
+#print("******************************************\n")
+
+#print(" MATERI INGLES\n")
+#nombre = input(" Para empesar ingrese su nombre:")
+#nota1 = int(input(" ingrese su primer nota: "))
+#nota2 = int(input(" ingrese su segunda nota: "))
+#nota3 = int(input(" ingrese su tercer  nota:  "))
+#promedio = nota1 + nota2 + nota3  /3
+#print(nombre + " su promedio es", + promedio)
+
+#if promedio >= 19:
+    #print ( nombre +" Felicidades Aprobo con un buen promedio ")
+#elif promedio >= 16:
+    #print ( nombre + " As aprobado con un promedio  base")
+#else: 
+    
+    #print(" Mala suerte reprobaste\n")
+
+#print (" FIN DEL PROGRAMA ")
+
+
+#DICCIONARIO
+
+#usuario = {"juan":"administrador",
+#"maria":"editora", 
+#"luis":"contador",
+#"anais":"secretaria",
+#"rodrigo":"gerente" }
+
+#nombre = input(" Ingrese el nombre de un Usuario\n")
+
+#if nombre  in usuario:
+    #print (f" el rol es  {usuario[nombre]}")
+
+#else:
+    #print("Este usuario no existe ")
+  
+
+    #print (usuario  ["nombre2"] 
+#print (usuario ["rol2"])
+#if "nombre5" in usuario:
+   #print (" si existe este  Usuario ")
+#else:
+  #print(" no exite este nombre de Usuario")
+
+#import os
+
+#respuesta = os.system("ping www.google.com")
+#if respuesta != 0:
+    #print("¡No hay conexión a internet!")
+#else:
+   # print("Conexión a internet activa.")
+
+
+
+
+#class Automovil: 
+   #def _init_(sef, marca, color, cilindraje):       
+     # self.marca= marca
+    #  self.color= color
+   #   self.cilindraje= cilindraje
+  # def _str_(self):
+ #   return f" Este es mi Automovil {self.marca} Color: {self.color} cilindraje:{self.cilindraje}"
+#Automovil_Nuevo_ = Automovil ("Volkswagen", "azul cielo", "1.6")
+#print(Automovil_Nuevo_)
+
+
+class Automovil:
+  def __init__(self, marca, color,cilindraje,): 
+      self.marca=marca 
+      self.color=color
+      self.cilindraje= cilindraje
+  def __str__(self):
+    return f" Este es mi automovil: marca{self.marca}, color: {self.color}, cilindraje:{self.cilindraje}"
+Automovil_Nuevo =Automovil ( " BMW i8 Coupe", " azul", "1.8")
+print(Automovil_Nuevo)
+
+
+
+
+
+class Automovil_Hibrido (Automovil):
+   def __init__(self, marca, color,cilindraje, descapotable):
+      super().__init__(marca, color,cilindraje )    
+      self.descapotable = descapotable
+   def __str__(self):
+      return f" El nuevo automovil que me compre : marca{self.marca}, color: {self.color}, cilindraje:{self.cilindraje}, descapotable:{self.descapotable}"
+Auto_nuevo = Automovil_Hibrido ( " BMW i8 Coupe", " azul con blanco", " 3.6", " automatico" )
+print(Auto_nuevo)
