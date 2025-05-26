@@ -1,0 +1,50 @@
+import hashlib
+
+# Mensaje de entrada
+#mensaje = "Este es un mensaje secreto"
+
+# Convertir a bytes y generar hash SHA-256
+#hash_obj = hashlib.sha256(mensaje.encode())
+#hash_resultado = hash_obj.hexdigest()
+
+# Mostrar resultado
+#print("Mensaje original:", mensaje)
+#print("Hash SHA-256:", hash_resultado)
+
+#########################
+#Para SHA-256 (hashing)
+#La biblioteca más simple y estándar que viene con Python es:
+    #hashlib (viene incluida en la librería estándar de Python)
+########################
+#Para AES (cifrado simétrico)
+#La biblioteca recomendada es:
+#pycryptodome
+#Es una librería muy completa para criptografía en Python que incluye AES, generación de claves, modos de operación, etc.
+########################
+
+######################################
+from Crypto.Cipher import AES
+from Crypto.Random import get_random_bytes
+from Crypto.Util.Padding import pad, unpad
+            
+##Mensaje original
+mensaje = "CODIGO DE OFICINA"                                             
+mensaje_bytes = mensaje.encode()
+
+##Generar clave AES de 256 bits (32 bytes)
+clave = get_random_bytes(32)
+
+##Generar IV (vector de inicialización) de 16 bytes
+iv = get_random_bytes(16)
+
+###Cifrado 
+cifrador = AES.new(clave, AES.MODE_CBC, iv)
+mensaje_cifrado = cifrador.encrypt(pad(mensaje_bytes, AES.block_size))
+
+print("Mensaje cifrado (hex):", mensaje_cifrado.hex())
+
+###Descifrado 
+descifrador = AES.new(clave, AES.MODE_CBC, iv)
+mensaje_descifrado = unpad(descifrador.decrypt(mensaje_cifrado), AES.block_size)
+
+print("Mensaje descifrado:", mensaje_descifrado.decode())
