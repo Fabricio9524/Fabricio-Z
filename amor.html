@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>Frases de Amor</title>
+  <link href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap" rel="stylesheet">
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+      background: linear-gradient(to top right, #ff9a9e, #fad0c4);
+      font-family: 'Pacifico', cursive;
+      color: #fff;
+      text-align: center;
+      overflow: hidden;
+    }
+
+    h1 {
+      margin-top: 50px;
+      font-size: 3em;
+      text-shadow: 2px 2px 5px #000;
+    }
+
+    .frase {
+      margin: 20px auto;
+      padding: 20px;
+      background: rgba(255, 255, 255, 0.2);
+      width: 80%;
+      border-radius: 20px;
+      font-size: 1.5em;
+      box-shadow: 0 0 15px rgba(255,255,255,0.3);
+    }
+
+    .corazon {
+      position: absolute;
+      width: 20px;
+      height: 20px;
+      background: red;
+      transform: rotate(45deg);
+      animation: flotar 10s linear infinite;
+    }
+
+    .corazon::before,
+    .corazon::after {
+      content: '';
+      position: absolute;
+      width: 20px;
+      height: 20px;
+      background: red;
+      border-radius: 50%;
+    }
+
+    .corazon::before {
+      top: -10px;
+      left: 0;
+    }
+
+    .corazon::after {
+      left: -10px;
+      top: 0;
+    }
+
+    @keyframes flotar {
+      0% {
+        top: 100%;
+        left: calc(100% * var(--i));
+        opacity: 1;
+      }
+      100% {
+        top: -10%;
+        left: calc(100% * var(--i) + 50px);
+        opacity: 0;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <h1>💖 Frases de Amor 💖</h1>
+
+  <div class="frase">Eres mi persona favorita.</div>
+  <div class="frase">Contigo todo tiene sentido.</div>
+  <div class="frase">Tu sonrisa ilumina mis días.</div>
+  <div class="frase">Eres el sueño que nunca quiero dejar de soñar.</div>
+
+  <!-- corazones flotando -->
+  <script>
+    for (let i = 0; i < 30; i++) {
+      let corazon = document.createElement('div');
+      corazon.className = 'corazon';
+      corazon.style.setProperty('--i', Math.random());
+      corazon.style.left = Math.random() * 100 + 'vw';
+      document.body.appendChild(corazon);
+    }
+  </script>
+
+  <!-- Música de fondo -->
+  <audio autoplay loop>
+    <source src="https://www.bensound.com/bensound-music/bensound-romantic.mp3" type="audio/mpeg">
+    Tu navegador no soporta audio.
+  </audio>
+
+</body>
+</html>
