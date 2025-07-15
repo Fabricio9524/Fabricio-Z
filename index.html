@@ -29,6 +29,7 @@
       border-radius: 20px;
       font-size: 1.5em;
       box-shadow: 0 0 15px rgba(255,255,255,0.3);
+      color: #e60000;
     }
 
     .corazon {
@@ -87,10 +88,19 @@
   <script>
     for (let i = 0; i < 30; i++) {
       let corazon = document.createElement('div');
-      corazon.className = 'corazon''globitos ';
+      corazon.className = 'corazon';
       corazon.style.setProperty('--i', Math.random());
       corazon.style.left = Math.random() * 100 + 'vw';
-      document.body.appendChild(corazon)(globitos);
+      document.body.appendChild(corazon);
+      
+    // Globitos
+    let globo = document.createElement('div');
+    globo.className = 'globo';
+    globo.style.setProperty('--i', Math.random());
+    globo.style.left = Math.random() * 100 + 'vw';
+    document.body.appendChild(globo);
+
+      
     }
   </script>
 
