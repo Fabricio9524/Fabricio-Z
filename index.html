@@ -3,83 +3,56 @@
 <html lang="es">
 <head>
   <meta charset="UTF-8">
-  <title>Corazón animado</title>
+  <title>Mensaje Carismático</title>
   <style>
-    * {
-      box-sizing: border-box;
-      margin: 0;
-      padding: 0;
-    }
-
-    html, body {
-      height: 100%;
-      width: 100%;
-      background: #ffe6f0;
-      font-family: 'Segoe UI', sans-serif;
-    }
-
-    .contenedor {
-      height: 100%;
-      width: 100%;
+    body {
+      background-color: #fffbe6;
+      font-family: 'Comic Sans MS', cursive, sans-serif;
       display: flex;
-      flex-direction: column;
       justify-content: center;
       align-items: center;
-      text-align: center;
-    }
-
-    .heart {
-      width: 100px;
-      height: 90px;
-      position: relative;
-      transform: scale(0);
-      animation: crecer 4s ease-out forwards;
-    }
-
-    .heart::before,
-    .heart::after {
-      content: "";
-      position: absolute;
-      width: 100px;
-      height: 90px;
-      background: #ff3366;
-      border-radius: 50%;
-      top: 0;
-      left: 0;
-    }
-
-    .heart::after {
-      left: 50px;
-    }
-
-    @keyframes crecer {
-      0% { transform: scale(0); }
-      50% { transform: scale(1.1); }
-      70% { transform: scale(0.9); }
-      100% { transform: scale(1); }
+      height: 100vh;
+      margin: 0;
     }
 
     .mensaje {
-      margin-top: 30px;
-      font-size: 24px;
-      color: #d4006d;
-      opacity: 0;
-      animation: aparecer 2s ease-in forwards;
-      animation-delay: 4.5s;
+      background-color: #ffe066;
+      border: 5px dashed #ff6b6b;
+      padding: 40px;
+      border-radius: 20px;
+      text-align: center;
+      box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
+      animation: latido 1.5s infinite;
     }
 
-    @keyframes aparecer {
-      from { opacity: 0; transform: translateY(20px); }
-      to { opacity: 1; transform: translateY(0); }
+    .mensaje h1 {
+      color: #d62828;
+      font-size: 32px;
+      margin-bottom: 10px;
+    }
+
+    .emoji {
+      font-size: 50px;
+      animation: reir 1.5s infinite;
+    }
+
+    @keyframes latido {
+      0%, 100% { transform: scale(1); }
+      50% { transform: scale(1.05); }
+    }
+
+    @keyframes reir {
+      0%, 100% { transform: rotate(0deg); }
+      25% { transform: rotate(5deg); }
+      75% { transform: rotate(-5deg); }
     }
   </style>
 </head>
 <body>
-
-  <div class="contenedor">
-    <div class="heart"></div>
-    <div class="mensaje">ERES LA NIÑA DE OJITOS PRECIOSOS💖</div>
+  <div class="mensaje">
+    <h1>¡PAGA o sino te pasa lo mismo<br>que a los anteriores participantes del grupo!</h1>
+    <div class="emoji">😆</div>
   </div>
-
 </body>
 </html>
+
