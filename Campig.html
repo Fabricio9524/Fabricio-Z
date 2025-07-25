@@ -1,0 +1,44 @@
+html = """
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Recordatorio de Campamento</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: 'Comic Sans MS', cursive;
+            color: white;
+            text-align: center;
+            height: 100vh;
+            background: url('https://i.imgur.com/w1UR2bI.gif') no-repeat center center fixed;
+            background-size: cover;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        .mensaje {
+            background-color: rgba(0, 0, 0, 0.6);
+            padding: 40px;
+            border-radius: 20px;
+            box-shadow: 0 0 15px #fff;
+            font-size: 2em;
+        }
+    </style>
+</head>
+<body>
+    <div class="mensaje">
+        HEY, SOY YO OTRA VEZ. <br>
+        RECORDARTE QUE SE ACERCA UN CAMPAMENTO <br>
+        ¡Y HAY QUE INSCRIBIRSE!
+    </div>
+</body>
+</html>
+"""
+
+# Guardar archivo HTML
+with open("campamento_recordatorio.html", "w", encoding="utf-8") as file:
+    file.write(html)
+
+print("✅ Archivo HTML creado: campamento_recordatorio.html")
